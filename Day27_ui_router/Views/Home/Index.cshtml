@@ -1,0 +1,34 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <base href="/" />
+    <title></title>
+    @* CSS *@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body ng-app="MyApp">
+    
+    <div class="container">
+        <!-- Navbar-->
+        <div class="row">
+            <div class="col-md-12">
+                <a ui-sref="home">Home</a> |
+                <a ui-sref="about.views">About</a> |
+                <a href="#">Profile</a>
+            </div>
+        </div> <!-- End Navbar-->
+
+        <!-- ui-view -->
+        <div ui-view></div>
+    </div> 
+
+    @* Libraries *@
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-ui-router.js"></script>
+    @* Custom Files *@
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers/homeController.js"></script>
+    <script src="~/ngApp/controllers/AboutController.js"></script>
+
+</body>
+</html>
